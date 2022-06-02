@@ -1,5 +1,9 @@
 # TEMPLATE SYNTAX
 
+스벨트의 템플릿 구문을 살펴본다. 자세한 내용은 [TEMPLATE SYNTAX](https://svelte.dev/docs#template-syntax-tags)을 참조한다. 
+
+
+
 ## Tags 
 \<div\>와 같이 소문자는 HTML element를 나타낸다. \<Widget\> 또는 \<Namespace.Widget\>과 같은 대문자화된 태그는 component를 나타낸다. 
 

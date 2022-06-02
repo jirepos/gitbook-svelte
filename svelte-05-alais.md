@@ -1,6 +1,8 @@
 # Svelte에서 절대 경로 사용
 
-파일의 위치 이동시 상대 경로변경이 어렵기 때문에 절대 경로를 사용하기 위해 rollup pluing alias를 사용한다. 
+파일의 위치 이동시 상대 경로변경이 어렵기 때문에 절대 경로를 사용하기 위해 rollup pluing alias를 사용한다. alais를 사용하는 방법을 살펴본다. 
+
+
 
 ## @rollup/plugin-alias 설치
 ```

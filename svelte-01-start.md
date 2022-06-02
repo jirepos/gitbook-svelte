@@ -1,5 +1,7 @@
 # 시작하기 
 
+스벨트 툴킷을 사용하여 프로젝트를 생성한 다음 실행해 볼 것이고 스벨트의 구조에 대해서 살펴보겠다. 
+
 ## 설치하기 
 ```
 npx degit sveltejs/template my-svelte-project
