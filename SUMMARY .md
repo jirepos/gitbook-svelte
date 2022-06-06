@@ -6,7 +6,8 @@
 * [Template Syntax](svelte-03-template.md)
 * [CSS 적용](svelte-04-css.md)      
 * [alais 사용](svelte-05-alais.md)      
-* [Router 사용](svelte-06-router.md)      
+* [Router 사용](svelte-06-router.md)     
+* [GraphQL 사용](svelte-07-graphql.md)     
 
 
 
