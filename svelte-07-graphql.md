@@ -115,12 +115,6 @@ awat를 사용한 예제이다.
 ```
 
 
-이거 정리
-
-https://hasura.io/learn/graphql/svelte-apollo/intro-to-graphql/1-architecture/
-
-
-
 
 
 ## svelte-apollo 사용 
