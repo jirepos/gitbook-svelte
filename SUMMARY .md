@@ -5,7 +5,7 @@
 * [Component Format](svelte-02-component.md)
 * [Template Syntax](svelte-03-template.md)
 * [CSS 적용](svelte-04-css.md)      
-* [alais 사용](svelte-05-alais.md)      
+* [alias 사용](svelte-05-alias.md)      
 * [Router 사용](svelte-06-router.md)     
 * [GraphQL 사용](svelte-07-graphql.md)     
 * [컴포넌트 간의 통신](comm/README.md)
