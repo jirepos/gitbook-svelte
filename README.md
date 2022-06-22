@@ -5,9 +5,13 @@
 스벨트 공식 사이트에서는 세 가지 특징을 내세우고 있습니다. 적은 양의 코드로 작성하고 가상 돔을 사용하지 않으며 진짜 반응성(Reactive)을 제공한다는 점이다.
 
 
-![](.gitbook/assets/vlt-001.png)     
+## 참고 
+[Svelte UI Library](https://dev.to/plazarev/overview-of-svelte-ui-libraries-and-components-2ban)     
 
-[출처:Hasura](https://hasura.io/learn/graphql/svelte-apollo/intro-to-graphql/1-architecture/)       
+
+
+
+
 
 
 
