@@ -246,4 +246,118 @@ App.svelte에서 button을 사용한다.
 
 
 
+digit로 생성한 프로젝트에 daisyUI를 설정하기 위해서 rollup.config.js를 수정했다. 아래 파일을 참고로 해서 각 프로젝트에 맞게 수정한다. 
+
+```jsx
+import svelte from 'rollup-plugin-svelte';
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
+import livereload from 'rollup-plugin-livereload';
+import { terser } from 'rollup-plugin-terser';
+import css from 'rollup-plugin-css-only';
+import alias from '@rollup/plugin-alias';
+import path from 'path';
+
+// daisUI 사용하기 위해 추가한 것
+import postcss from "rollup-plugin-postcss";
+import sveltePreprocess from "svelte-preprocess";
+
+
+const production = !process.env.ROLLUP_WATCH;
+
+function serve() {
+    let server;
+
+    function toExit() {
+        if (server) server.kill(0);
+    }
+
+    return {
+        writeBundle() {
+            if (server) return;
+            server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
+                stdio: ['ignore', 'inherit', 'inherit'],
+                shell: true,
+            });
+
+            process.on('SIGTERM', toExit);
+            process.on('exit', toExit);
+        },
+    };
+}
+
+export default {
+    input: 'src/main.js',
+    output: {
+        sourcemap: true,
+        format: 'iife',
+        name: 'app',
+        file: 'public/build/bundle.js',
+    },
+    plugins: [
+        svelte({
+            compilerOptions: {
+                // enable run-time checks when not in production
+                dev: !production,
+            },
+            // daisUI 사용하기 위해 추가한 것
+            preprocess: sveltePreprocess({
+                sourceMap: !production,
+            }),
+        }),
+		// daisUI 사용하기 위해 추가한 것
+        // we'll extract any component CSS out into
+        // a separate file - better for performance
+        postcss({
+            plugins: [],
+        }),
+        // we'll extract any component CSS out into
+        // a separate file - better for performance
+		// daisUI 사용하기 위해 주석처리한 것 
+        //css({ output: 'bundle.css' }),
+        // 절대경로 alias 추가하기
+        // 아래와 같이 설정시 @/components는 /src/components 경로로 실행
+        alias({
+            entries: [
+                {
+                    find: '@',
+                    replacement: path.resolve(__dirname, 'src/'),
+                },
+                {
+                    find: '~',
+                    replacement: path.resolve(__dirname, 'static/'),
+                },
+            ],
+        }),
+
+        // If you have external dependencies installed from
+        // npm, you'll most likely need these plugins. In
+        // some cases you'll need additional configuration -
+        // consult the documentation for details:
+        // https://github.com/rollup/plugins/tree/master/packages/commonjs
+        resolve({
+            browser: true,
+            dedupe: ['svelte'],
+        }),
+        commonjs(),
+
+        // In dev mode, call `npm run start` once
+        // the bundle has been generated
+        !production && serve(),
+
+        // Watch the `public` directory and refresh the
+        // browser on changes when not in production
+        !production && livereload('public'),
+
+        // If we're building for production (npm run build
+        // instead of npm run dev), minify
+        production && terser(),
+    ],
+    watch: {
+        clearScreen: false,
+    },
+};
+
+```
+
 
