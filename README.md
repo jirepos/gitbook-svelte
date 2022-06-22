@@ -6,8 +6,9 @@
 
 
 ## 참고 
-[Svelte UI Library](https://dev.to/plazarev/overview-of-svelte-ui-libraries-and-components-2ban)     
-
+[Svelte UI Library](https://dev.to/plazarev/overview-of-svelte-ui-libraries-and-components-2ban)  
+[AgnosticUI](https://www.agnosticui.com/)        
+[daisyUI](https://daisyui.com/)    
 
 
 
