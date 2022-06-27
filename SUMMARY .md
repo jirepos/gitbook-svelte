@@ -20,6 +20,7 @@
 * [window, body 특정 선택자](svelte-16-window-event.md)
 * [바인딩](svelte-17-binding.md)
 * [UI Library](svelte-18-ui-lib.md)
+* [BootStrap 사용](svelte-19-bootstrap.md)
 
 
 
