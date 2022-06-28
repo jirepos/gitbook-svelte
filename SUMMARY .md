@@ -21,6 +21,8 @@
 * [바인딩](svelte-17-binding.md)
 * [UI Library](svelte-18-ui-lib.md)
 * [BootStrap 사용](svelte-19-bootstrap.md)
+* [Typescript 사용](svelte-20-typescript.md)
+* [svelte-preprocess 사용](svelte-21-preprocess.md)
 
 
 

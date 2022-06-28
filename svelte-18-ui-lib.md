@@ -1,20 +1,6 @@
 # Svelte UI Library 
 
-## 기본 지식 
-
-### CSS 전, 후 처리기
-* 전처리기 : 화면에 보여주기 전에 (렌더링 전에) CSS를 변경해서, 스타일을 보여준다. 
-   사용자가 작성하기 쉬운 코드로 작성 → 기본 CSS로 변환 → 렌더링
-
-* 후처리기 : 화면에 보여주고 나서, CSS 변경.
-  기본 CSS파일 작성 => 렌더링 → 외부 프로그램 사용해서 스타일 변경
-
-
-**CSS 전,후 처리기들**    
-* 전처리기 : Scss, Stylus, Less 
-* 후처리기 : [PostCSS](https://www.npmjs.com/package/postcss)     
-
-### Tailwind CSS 
+## Tailwind CSS 
 CSS 프레임워크이다. 부트스트랩과 비슷하게 m-1, flex와 같이 미리 세팅된 유틸리티 클래스를 활용하는 방식으로 HTML 코드 내에서 스타일링을 할 수 있다.
 
 

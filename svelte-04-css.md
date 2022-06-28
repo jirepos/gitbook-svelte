@@ -68,3 +68,5 @@ src/App.svelete 파일에 css 파일을 import한다.
 ## References
 [Using CSS-in-JS with Svelte](https://svelte.dev/blog/svelte-css-in-js)    
 [How to import CSS files to Svelte](https://www.educative.io/edpresso/how-to-import-css-files-to-svelte)     
+[Svelte - Adding SCSS and Bootstrap to your project](https://tongere.hashnode.dev/svelte-adding-scss-and-bootstrap-to-your-project)   
+[Svelte + TS + SCSS + α](https://beomy.github.io/tech/svelte/svelte-ts-scss/)   
